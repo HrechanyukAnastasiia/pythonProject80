@@ -3,9 +3,9 @@ import time
 
 def timer(func):
     def wrapper(num):
-        start_time = time.time() # Початок
-        result = func(num) # Виконання
-        end_time = time.time() # Завершення
+        start_time = time.time()
+        result = func(num)
+        end_time = time.time()
         t = end_time - start_time
         print("Пройшло:", round(t, 2))
         return result
@@ -23,9 +23,9 @@ def numbersss(num):
             return x
     return y
 
-number_1 = 2
-number_2 = 5
-number_3 = 8
+number_1 = -6
+number_2 = 2
+number_3 = -7
 
 print(f"Число {number_1}: {numbersss(number_1)}")
 print(f"Число {number_2}: {numbersss(number_2)}")
